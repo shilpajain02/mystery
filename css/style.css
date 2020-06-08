@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background: url("/images/background.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.bg::before {
+  content: "";
+  background-color: #10180d;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+}
+
+.bg .header {
+  flex: 1;
+  z-index: 10;
+}
+.bg .header .title {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.bg progress {
+  margin: 60px 0 0 0;
+  z-index: 10;
+  height: 15px;
+  color: white;
+  background-color: red;
+  width: 60%;
+}
+::placeholder {
+  color: #333;
+  padding: 10px 10px;
+  text-align: center;
+}
+.bg .question {
+  margin: 20px 40px;
+  flex: 10;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 10px 30px;
+  width: 60%;
+  z-index: 1;
+  border: 1px dotted #fff;
+  border-radius: 10px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bg .question .answer {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+}
+.bg .question .answer input {
+  padding: 10px;
+  margin: 0 10px;
+  flex: 1;
+  /* background-color: #10180d; */
+  background: #fff;
+  opacity: 0.8;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  /* outline-color: greenyellow; */
+}
+.bg .question .answer button {
+  padding: 10px;
+  background-color: greenyellow;
+  border: none;
+}
+.bg .footer {
+  z-index: 5;
+  text-align: center;
+}
+
+.end {
+  background: url("/images/endgame.jpg") no-repeat center center/cover;
+  z-index: 100;
+}
+@media (max-width: 600px) {
+  .bg .header .title {
+    font-size: 2rem;
+  }
+  .bg .question {
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 90%;
+    line-height: 1;
+  }
+
+  .bg progress {
+    width: 70%;
+  }
+}

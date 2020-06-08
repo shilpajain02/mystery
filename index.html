@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Mystery Puzzle, quiz to solve with friends. Solve all puzzle and find the secret Key"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+    <script>
+      var quizMaster = null;
+      function customLoad() {
+        quizMaster = new QuizMaster();
+      }
+    </script>
+    <title>The Mystery Puzzle| By Meha Jain</title>
+  </head>
+  <body onload="customLoad()">
+    <div class="bg">
+      <div class="header">
+        <div class="title"><h1>Mystery House</h1></div>
+      </div>
+      <progress id="progress" value="0" max="1"></progress>
+      <div class="question" id="quiz_board">
+        <p id="question">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          placeat animi laborum sunt. Quos aliquam dolorum fugiat ad tenetur.
+        </p>
+        <div class="answer" id="answer_div">
+          <input
+            type="text"
+            id="answer"
+            value=""
+            placeholder="Type your answer"
+          />
+          <button
+            onclick="quizMaster.checkAnswer(document.getElementById('answer').value)"
+          >
+            Check Answer
+          </button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Fun#Home &copy; 2020. All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
