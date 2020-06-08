@@ -12,6 +12,7 @@ body {
   /* background: url("/images/background.jpg") no-repeat center center/cover; */
   background: url("../images/background.jpg") no-repeat center center/cover;
   position: relative;
+  font-family: "Comic Neue", cursive;
 }
 
 .bg {
@@ -82,9 +83,10 @@ body {
 }
 .bg .question .answer input {
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 2px;
   flex: 1;
   /* background-color: #10180d; */
+  font-family: "Comic Neue", cursive;
   background: #fff;
   opacity: 0.8;
   border: none;
@@ -95,11 +97,13 @@ body {
 .bg .question .answer button {
   padding: 10px;
   background-color: greenyellow;
+  font-family: "Comic Neue", cursive;
   border: none;
 }
 .bg .footer {
   z-index: 5;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .end {
@@ -127,7 +131,7 @@ body {
   }
   .bg .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
   }
   .bg .question .answer button {
     padding: 10px;
@@ -151,14 +155,17 @@ body {
   }
 
   .bg progress {
-    width: 70%;
+    width: 90%;
   }
   .bg .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+  }
+  .bg .question .answer input {
+    font-size: 0.8rem;
   }
   .bg .question .answer button {
-    padding: 10px;
+    padding: 5px;
     background-color: yellow;
     border: none;
   }
@@ -187,7 +194,7 @@ body {
   }
   .bg .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
   }
   .bg .question .answer button {
     padding: 10px;
