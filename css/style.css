@@ -129,6 +129,11 @@ body {
     position: absolute;
     bottom: 0;
   }
+  .bg .question .answer button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+  }
 }
 @media (min-width: 321px) and (max-width: 600px) {
   .bg {
@@ -151,6 +156,11 @@ body {
   .bg .footer {
     position: absolute;
     bottom: 0;
+  }
+  .bg .question .answer button {
+    padding: 10px;
+    background-color: yellow;
+    border: none;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -178,5 +188,10 @@ body {
   .bg .footer {
     position: absolute;
     bottom: 0;
+  }
+  .bg .question .answer button {
+    padding: 10px;
+    background-color: purple;
+    border: none;
   }
 }
