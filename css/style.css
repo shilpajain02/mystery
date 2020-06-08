@@ -103,7 +103,8 @@ body {
 }
 
 .end {
-  background: url("/images/endgame.jpg") no-repeat center center/cover;
+  background: url("../images/endgame.jpg") no-repeat center center/cover;
+  /* background: url("/images/endgame.jpg") no-repeat center center/cover; */
   z-index: 100;
 }
 @media (max-width: 600px) {
