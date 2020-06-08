@@ -107,13 +107,16 @@ body {
   /* background: url("/images/endgame.jpg") no-repeat center center/cover; */
   z-index: 100;
 }
-@media (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 600px) {
+  .bg {
+    height: 70%;
+  }
   .bg .header .title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .bg .question {
     margin: 10px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 10px;
     width: 90%;
     line-height: 1;
@@ -121,5 +124,36 @@ body {
 
   .bg progress {
     width: 70%;
+  }
+  .bg .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bg {
+    height: 60%;
+  }
+  .bg .header .title {
+    font-size: 1.2rem;
+  }
+  .bg .question {
+    margin: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    width: 90%;
+    line-height: 1;
+  }
+  .bg .question .answer input {
+    margin: 0;
+    padding: 0 5px;
+  }
+  .bg progress {
+    width: 90%;
+    margin: 20px 0 0 0;
+  }
+  .bg .footer {
+    position: absolute;
+    bottom: 0;
   }
 }
